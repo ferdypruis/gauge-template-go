@@ -1,11 +1,11 @@
 # gauge-template-go
 
-Sample template for getting started with Gauge and [the Go language runner](https://github.com/getgauge-contrib/gauge-go).
+Sample template for getting started with [Gauge](https://github.com/getgauge/gauge) and the [Go language runner](https://github.com/getgauge-contrib/gauge-go).
 
 ## Usage
 Install the template
 ```
-gauge template go https://github.com/ferdypruis/gauge-template-go/releases/download/v0.0.1/golang.zip
+gauge template go https://github.com/ferdypruis/gauge-template-go/archive/refs/tags/v0.0.1.zip
 ```
 
 Then init a new project as normal
