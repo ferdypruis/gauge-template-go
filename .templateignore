@@ -1,4 +1,5 @@
 .git
+.github
 .templateignore
 README.md
 LICENSE
