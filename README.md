@@ -5,7 +5,7 @@ Sample template for getting started with [Gauge](https://github.com/getgauge/gau
 ## Usage
 Install the template
 ```
-gauge template go https://github.com/ferdypruis/gauge-template-go/archive/refs/tags/v0.0.1.zip
+gauge template go https://github.com/ferdypruis/gauge-template-go/archive/refs/tags/v1.0.0.zip
 ```
 
 Then init a new project as normal

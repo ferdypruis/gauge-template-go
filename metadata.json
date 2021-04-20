@@ -1,7 +1,7 @@
 {
   "name": "go",
   "description": "Gauge template for Golang",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "postInstallCmd": "",
-  "postInstallMsg": "Create a new project with \"gauge init go\"."
+  "postInstallMsg": "Run specifications with \"gauge run specs/\"."
 }
