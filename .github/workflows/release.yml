@@ -19,6 +19,8 @@ jobs:
       - uses: geertvdc/setup-hub@master
 
       - name: package and releases
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
           ignored="! -path $(pwd) "
           for i in $(cat .templateignore); do
@@ -39,11 +41,15 @@ jobs:
           hub release edit -m "" -a golang.zip.sha256 "v$version"
 
       - name: setup git
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
           git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
           git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
 
       - name: bump version
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
           git clean -dfx
           version=$(jq -r ".version" metadata.json | awk -F. '{$NF = $NF + 1;} 1' | sed 's/ /./g')
