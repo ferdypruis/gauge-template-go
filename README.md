@@ -17,7 +17,7 @@ The _stepimpl.go_ was copied from https://github.com/getgauge-contrib/gauge-go/b
 
 
 # Installing Go language runner plugin
-If you try to install the Go language runner plugin on a recent version of Go, Gauge exists with the following error;
+If you try to install the Go language runner plugin on a recent version of Go, Gauge exits with the following error;
 
     root@356636ffd58b:/go# gauge install go
     .......................
