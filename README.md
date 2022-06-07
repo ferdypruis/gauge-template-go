@@ -37,3 +37,4 @@ To circumvent this until this gets fixed, temporarily disable Go modules while i
     
     Successfully installed plugin 'go' version 0.3.1
     
+[Here is a Dockerfile](https://gist.github.com/ferdypruis/ef55ec2fb9cf3d161a8b5af770a4a714) with Gauge and Go which I use in my CI/CD pipeline.
