@@ -14,3 +14,26 @@ gauge init go
 ```
 
 The _stepimpl.go_ was copied from https://github.com/getgauge-contrib/gauge-go/blob/master/stepImpl/stepImplementation.go.
+
+
+# Installing Go language runner plugin
+If you try to install the Go language runner plugin on a recent version of Go, Gauge exists with the following error;
+
+    root@356636ffd58b:/go# gauge install go
+    .......................
+    go: go.mod file not found in current directory or any parent directory.
+            'go get' is no longer supported outside a module.
+            To build and install a command, use 'go install' with a version,
+            like 'go install example.com/cmd@latest'
+            For more information, see https://golang.org/doc/go-get-install-deprecation
+            or run 'go help get' or 'go help install'.
+    Failed to install plugin 'go' version 0.3.1.
+    Reason: exit status 1
+
+To circumvent this until this gets fixed, temporarily disable Go modules while installing the plugin by setting the environment variable `GO111MODULE` to "off";
+
+    root@356636ffd58b:/go# GO111MODULE="off" gauge install go
+    .......................
+    
+    Successfully installed plugin 'go' version 0.3.1
+    
